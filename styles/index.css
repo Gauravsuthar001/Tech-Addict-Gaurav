@@ -1,0 +1,454 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Afacad&display=swap");
+
+/*=============== BASE ===============*/
+/*=============== HEADER & NAV ===============*/
+
+
+/* LANDING IMAGE  */
+
+.land {
+  position: absolute;
+  display: flex;
+}
+.land-img img {
+  width: 600px;
+}
+.land-content {
+  margin-top: 5vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5rem;
+  /* position: relative; */
+  align-items: center;
+  padding-top: 6rem;
+}
+
+.land-head {
+  color: white;
+  > h3 {
+    font-size: 2.4vw;
+    line-gap-override: 1rem;
+    width: 70%;
+    > .grn {
+      color: rgb(22 248 182);
+    }
+
+    > .pnk {
+      color: #f926ae;
+    }
+  }
+
+  > h6 {
+    font-size: 20px;
+  }
+}
+.land img {
+  width: 100%;
+}
+
+.home {
+  margin-top: 50px;
+}
+
+/* MINE INFO  */
+
+.sec-head {
+  width: 100%;
+  margin-top: 8vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > span {
+    color: rgb(158 124 255);
+    font-size: 1.2vw;
+  }
+
+  > h4 {
+    font-size: 2.4vw;
+    color: white;
+    font-weight: 900;
+  }
+
+  > p {
+    font-size: 22px;
+    margin-top: 2rem;
+    color: white;
+    width: 48%;
+  }
+}
+
+.mine-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mine-desc p {
+  width: 60%;
+  text-align: center;
+  color: white;
+  font-size: 1.1vw;
+  margin-top: 1.2vw;
+}
+
+.sub-box {
+  width: 50vw;
+  display: grid;
+  align-items: stretch;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 2vw;
+}
+
+.sub-box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.sub-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #172542;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  border: none;
+
+  > span {
+    color: white;
+  }
+}
+
+.clr1 {
+  color: #a679ff;
+}
+
+.clr2 {
+  color: #4ccfaf;
+}
+
+.clr3 {
+  color: #f926ae;
+}
+
+.clr4 {
+  color: #ff9f24;
+}
+
+/* FEATURES  */
+
+.features-outer {
+  margin-top: 2vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: start;
+  column-gap: 10vw;
+  row-gap: 4vw;
+  /* margin: auto; */
+}
+
+.feature {
+  height: auto;
+  align-items: center;
+  gap: 10vw;
+}
+svg,
+video {
+  display: block;
+  color: #a679ff;
+  margin-bottom: 10px;
+}
+.feature-cont {
+  width: 100%;
+  > span {
+    color: #a679ff;
+  }
+
+  > h3 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  > p {
+    font-size: 17px;
+    color: white;
+  }
+}
+
+.fea-img-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  > img {
+    width: 40%;
+  }
+}
+
+.container-1 {
+  width: 70%;
+  margin: auto;
+}
+
+.revv {
+  flex-direction: row-reverse;
+  gap: 10vw;
+}
+
+/* COURSE  */
+
+.course-outer {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  row-gap: 4vw;
+  column-gap: 5rem;
+}
+
+.course-item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 300px;
+  object-fit: cover;
+  color: white;
+  background-color: #12172a;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+.course-item:hover {
+  transition: 0.2s all ease-in-out;
+  border: 1px solid #4c5167;
+  cursor: pointer;
+}
+.cr-img img {
+  width: 100%;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.cou-head h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cr-desc p {
+  font-size: 18px;
+}
+
+.cou-head,
+.cr-desc {
+  padding: 14px;
+}
+
+.fr-cen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.all-cr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4vw;
+  color: white;
+  > p {
+    margin-top: 1rem;
+    letter-spacing: 2px;
+  }
+}
+.view-all {
+  background-color: #a679ff;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  > a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+  }
+}
+
+/* FOOTER  */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  margin-top: 7rem;
+  background-color: #12172a;
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  > svg {
+    fill: white;
+    width: 1.3rem;
+    margin-right: 15px;
+    height: auto;
+  }
+}
+
+
+/* For large devices */
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+  .land {
+    display: none;
+  }
+  nav {
+    height: 5vw; /* Allow the height to adjust based on content */
+    padding: 25px 20px;
+  }
+
+  li {
+    display: block;
+    margin-bottom: 10px; /* Add space between list items */
+  }
+
+  li a {
+    margin-left: 0; /* Remove margin for mobile */
+    display: block;
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .navbar-logo {
+    width: 40px; /* Decrease the size of the logo for smaller screens */
+    height: 40px;
+    margin-right: 0.3em;
+  }
+
+  .menu-btn {
+    display: block; /* Display the menu button for smaller screens */
+    /* Style the menu button for smaller screens */
+  }
+
+  .menu-links {
+    display: none; /* Hide the menu links by default on smaller screens */
+    /* Additional styles for the menu links */
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 1rem;
+    margin-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.94);
+    padding: 2vw;
+    width: 100%;
+    text-align: center;
+    height: 12rem;
+  }
+
+  /* Show the menu links when menu button is clicked */
+  .menu-btn:focus + .menu-links,
+  .menu-links:hover {
+    display: block;
+    /* Additional styles for the displayed menu links */
+  }
+
+  .land-img img {
+    width: 300px;
+  }
+
+  .land-head h3 {
+    font-size: 24px;
+  }
+
+  .land-content h6 {
+    font-size: 16px;
+    margin-top: 0.4rem;
+    font-weight: 400;
+  }
+
+  .sec-head {
+    > span {
+      font-size: 17px;
+    }
+    > h4 {
+      font-size: 25px;
+      font-weight: bolder;
+    }
+    > p {
+      font-size: 15px;
+      width: 80%;
+    }
+  }
+  .features-outer {
+    margin-top: 3rem;
+  }
+  .feature {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .feature-cont {
+    > h3 {
+      font-size: 22px;
+      font-weight: 900;
+    }
+    > p {
+      font-size: 16px;
+    }
+  }
+  .mine-desc p {
+    font-size: 14px;
+    width: 80%;
+  }
+  .course-outer {
+    margin-top: 2rem;
+  }
+
+  .course-item {
+    width: 280px;
+    margin-bottom: 1rem;
+  }
+  .land-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .view-all .sub-box {
+    flex-direction: column;
+  }
+  .course-outer,
+  .features-outer,
+  .sub-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+}
+@media screen and (max-width: 450px) {
+}

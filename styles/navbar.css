@@ -1,0 +1,177 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+/*=============== VARIABLES CSS ===============*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Afacad", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+body {
+  background-color: rgb(0, 12, 23);
+  color: white;
+}
+
+.anim{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.7s ease;
+}
+
+nav {
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  position: fixed;
+  top: 0;
+  color: #fff;
+  padding: 25px 35px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 015);
+  height: 5vw;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  > a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+  }
+}
+
+.home-link,
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  font-size: 19px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.navbar-logo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+  object-fit: cover;
+  > img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+.Xicon {
+  display: none;
+}
+
+.menu-btn {
+  display: none; /* Initially hide the menu button */
+  /* Style the menu button as needed */
+  fill: white;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 7rem;
+    background-color: #12172a;
+    color: white;
+    height: auto;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .social-links a{
+    > svg {
+      fill: white;
+      width: 1.3rem;
+      margin-right: 15px;
+      height: auto;
+    }
+  }
+
+
+  @media screen and (max-width: 576px) {
+    .land {
+      display: none;
+    }
+    nav {
+      height: 5vw; /* Allow the height to adjust based on content */
+      padding: 25px 20px;
+    }
+  
+    li {
+      display: block;
+      margin-bottom: 10px; /* Add space between list items */
+    }
+  
+    li a {
+      margin-left: 0; /* Remove margin for mobile */
+      display: block;
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  
+    .navbar-logo {
+      width: 40px; /* Decrease the size of the logo for smaller screens */
+      height: 40px;
+      margin-right: 0.3em;
+    }
+  
+    .menu-btn {
+      display: block; /* Display the menu button for smaller screens */
+      /* Style the menu button for smaller screens */
+    }
+  
+    .menu-links {
+      display: none; /* Hide the menu links by default on smaller screens */
+      /* Additional styles for the menu links */
+      flex-direction: column;
+      position: fixed;
+      right: 0;
+      top: 1rem;
+      margin-top: 3rem;
+      background-color: rgba(0, 0, 0, 0.94);
+      padding: 2vw;
+      width: 100%;
+      text-align: center;
+      height: 12rem;
+    }
+  
+    /* Show the menu links when menu button is clicked */
+    .menu-btn:focus + .menu-links,
+    .menu-links:hover {
+      display: block;
+      /* Additional styles for the displayed menu links */
+    }
+  
+    footer {
+      flex-direction: column;
+    }
+    .social-links {
+      margin-top: 1rem;
+      > svg {
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+    }
+  }

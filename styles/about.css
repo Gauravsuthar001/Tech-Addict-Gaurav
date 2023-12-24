@@ -1,0 +1,46 @@
+.main{
+    margin-top: 15vh;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.head h3{
+    font-size: 26px;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgba(225, 223, 223, 0.692);
+}
+
+.part-1{
+    margin-bottom: 2rem;
+}
+
+ul{
+    list-style-type: georgian;
+    font-size: 18px;
+    color: rgba(225, 223, 223, 0.692);
+    margin-top: .2rem;
+}
+
+li{
+    margin-bottom: .3rem;
+}
+
+span{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 576px){
+    .main{
+        margin-top: 10vh;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
