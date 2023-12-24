@@ -136,7 +136,8 @@ li {
     }
   
     .menu-btn {
-      display: block; /* Display the menu button for smaller screens */
+      display: block; 
+      fill:"white";/* Display the menu button for smaller screens */
       /* Style the menu button for smaller screens */
     }
   
