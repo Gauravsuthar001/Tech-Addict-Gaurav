@@ -79,9 +79,7 @@ li {
 }
 
 .menu-btn {
-  display: none; /* Initially hide the menu button */
-  /* Style the menu button as needed */
-  fill: white;
+  display: none;
 }
 .footer {
     display: flex;
