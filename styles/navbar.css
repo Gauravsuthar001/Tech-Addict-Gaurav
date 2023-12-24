@@ -80,6 +80,7 @@ li {
 
 .menu-btn {
   display: none;
+  color: rgb(0, 12, 23);
 }
 .footer {
     display: flex;
